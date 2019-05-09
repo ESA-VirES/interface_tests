@@ -1,0 +1,4 @@
+Small independent script to do quick tests to configured endpoint.
+Sends all xml files located in the same path and checks for responses.
+
+WIP

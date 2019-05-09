@@ -1,0 +1,38 @@
+<wps:Execute version="1.0.0" service="WPS" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1">
+  <ows:Identifier>aeolus:level2A</ows:Identifier>
+  <wps:DataInputs>
+    <wps:Input>
+      <ows:Identifier>collection_ids</ows:Identifier>
+      <wps:Data>
+        <wps:ComplexData mimeType="application/json">
+          <![CDATA[["ALD_U_N_2A"]]]>
+        </wps:ComplexData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>begin_time</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>2019-04-01T00:34:58.334Z</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>end_time</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>2019-04-01T00:58:24.631Z</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>observation_fields</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>mie_altitude_obs,rayleigh_altitude_obs,longitude_of_DEM_intersection_obs,latitude_of_DEM_intersection_obs,altitude_of_DEM_intersection_obs,SCA_extinction,SCA_time_obs,SCA_backscatter,SCA_LOD,SCA_extinction_variance,SCA_backscatter_variance,SCA_LOD_variance,MCA_extinction,MCA_time_obs,MCA_LOD,SCA_QC_flag</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+  </wps:DataInputs>
+  <wps:ResponseForm>
+    <wps:ResponseDocument lineage="true" storeExecuteResponse="true" status="true">
+      <wps:Output mimeType="application/netcdf">
+        <ows:Identifier>output</ows:Identifier>
+      </wps:Output>
+    </wps:ResponseDocument>
+  </wps:ResponseForm>
+</wps:Execute>

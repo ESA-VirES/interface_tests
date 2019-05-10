@@ -1,0 +1,36 @@
+<wps:Execute version="1.0.0" service="WPS" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1">
+  <ows:Identifier>aeolus:level1B:AUX:MRC</ows:Identifier>
+  <wps:DataInputs>
+    <wps:Input>
+      <ows:Identifier>collection_ids</ows:Identifier>
+      <wps:Data>
+        <wps:ComplexData mimeType="application/json">
+          <![CDATA[["AUX_MRC_1B"]]]>
+        </wps:ComplexData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>begin_time</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>2018-12-10T18:12:13.273Z</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>end_time</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>2018-12-10T18:36:28.224Z</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>fields</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>lat_of_DEM_intersection,lon_of_DEM_intersection,time_freq_step,frequency_offset,frequency_valid,measurement_response,measurement_response_valid,measurement_error_mie_response,reference_pulse_response,reference_pulse_response_valid,reference_pulse_error_mie_response,num_measurements_usable,num_valid_measurements,num_reference_pulses_usable,num_mie_core_algo_fails_measurements,num_ground_echoes_not_detected_measurements,measurement_mean_sensitivity,measurement_zero_frequency,measurement_error_mie_response_std_dev,measurement_offset_frequency,reference_pulse_mean_sensitivity,reference_pulse_zero_frequency,reference_pulse_error_mie_response_std_dev,reference_pulse_offset_frequency,satisfied_min_valid_freq_steps_per_cal,freq_offset_data_monotonic,num_of_valid_frequency_steps,measurement_mean_sensitivity_valid,measurement_error_response_std_dev_valid,measurement_zero_frequency_response_valid,measurement_data_monotonic,reference_pulse_mean_sensitivity_valid,reference_pulse_error_response_std_dev_valid,reference_pulse_zero_frequency_response_valid,reference_pulse_data_monotonic,mie_core_measurement_FWHM,mie_core_measurement_amplitude,mie_core_measurement_offset</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+  </wps:DataInputs>
+  <wps:ResponseForm>
+    <wps:RawDataOutput mimeType="application/msgpack">
+      <ows:Identifier>output</ows:Identifier>
+    </wps:RawDataOutput>
+  </wps:ResponseForm>
+</wps:Execute>

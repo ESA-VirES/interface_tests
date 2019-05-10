@@ -1,0 +1,46 @@
+<wps:Execute version="1.0.0" service="WPS" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1">
+  <ows:Identifier>aeolus:level1B</ows:Identifier>
+  <wps:DataInputs>
+    <wps:Input>
+      <ows:Identifier>collection_ids</ows:Identifier>
+      <wps:Data>
+        <wps:ComplexData mimeType="application/json">
+          <![CDATA[["ALD_U_N_1B"]]]>
+        </wps:ComplexData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>begin_time</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>2019-04-01T00:40:03.525Z</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>end_time</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>2019-04-01T00:53:57.094Z</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>observation_fields</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>time,longitude_of_DEM_intersection,latitude_of_DEM_intersection,altitude_of_DEM_intersection,mie_longitude,mie_latitude,rayleigh_longitude,rayleigh_latitude,mie_altitude,rayleigh_altitude,mie_range,rayleigh_range,geoid_separation,velocity_at_DEM_intersection,AOCS_pitch_angle,AOCS_roll_angle,AOCS_yaw_angle,mie_HLOS_wind_speed,rayleigh_HLOS_wind_speed,mie_signal_intensity,rayleigh_signal_channel_A_intensity,rayleigh_signal_channel_B_intensity,rayleigh_signal_intensity,mie_ground_velocity,rayleigh_ground_velocity,mie_HBE_ground_velocity,rayleigh_HBE_ground_velocity,mie_total_ZWC,rayleigh_total_ZWC,mie_scattering_ratio,mie_SNR,rayleigh_channel_A_SNR,rayleigh_channel_B_SNR,rayleigh_SNR,mie_error_quantifier,rayleigh_error_quantifier,average_laser_energy,laser_frequency,rayleigh_bin_quality_flag,mie_bin_quality_flag,rayleigh_reference_pulse_quality_flag,mie_reference_pulse_quality_flag,albedo_off_nadir</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>bbox</ows:Identifier>
+      <wps:Data>
+        <wps:BoundingBoxData crs="http://www.opengis.net/def/crs/EPSG/0/4326">
+          <ows:LowerCorner>-116.70006087725909 29.101453912713488</ows:LowerCorner>
+          <ows:UpperCorner>-92.98838289871938 56.320902033984765</ows:UpperCorner>
+        </wps:BoundingBoxData>
+      </wps:Data>
+    </wps:Input>
+
+  </wps:DataInputs>
+  <wps:ResponseForm>
+    <wps:RawDataOutput mimeType="application/msgpack">
+      <ows:Identifier>output</ows:Identifier>
+    </wps:RawDataOutput>
+  </wps:ResponseForm>
+</wps:Execute>

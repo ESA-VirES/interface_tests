@@ -108,6 +108,7 @@ def do_request(xml_location):
             print '{:<70s}{:^20s}'.format("Requesting %s"%xml_location, 'FAILED')
 
         else:
+            # TODO further tests with received data, unpack and check for content
             passed_reqs += 1
             print '{:<70s}{:^20s}'.format("Requesting %s"%xml_location, 'PASSED')
 

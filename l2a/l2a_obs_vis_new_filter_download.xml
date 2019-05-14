@@ -12,26 +12,38 @@
     <wps:Input>
       <ows:Identifier>begin_time</ows:Identifier>
       <wps:Data>
-        <wps:LiteralData>2019-04-01T00:38:10.780Z</wps:LiteralData>
+        <wps:LiteralData>2019-04-01T00:36:09.777Z</wps:LiteralData>
       </wps:Data>
     </wps:Input>
     <wps:Input>
       <ows:Identifier>end_time</ows:Identifier>
       <wps:Data>
-        <wps:LiteralData>2019-04-01T00:54:11.197Z</wps:LiteralData>
+        <wps:LiteralData>2019-04-01T01:15:12.329Z</wps:LiteralData>
       </wps:Data>
     </wps:Input>
     <wps:Input>
       <ows:Identifier>observation_fields</ows:Identifier>
       <wps:Data>
-        <wps:LiteralData>mie_altitude_obs,rayleigh_altitude_obs,longitude_of_DEM_intersection_obs,latitude_of_DEM_intersection_obs,altitude_of_DEM_intersection_obs,SCA_extinction,SCA_time_obs,SCA_backscatter,SCA_LOD,SCA_extinction_variance,SCA_backscatter_variance,SCA_LOD_variance,MCA_extinction,MCA_time_obs,MCA_LOD,SCA_QC_flag</wps:LiteralData>
+        <wps:LiteralData>L1B_start_time_obs,L1B_centroid_time_obs,MCA_time_obs,longitude_of_DEM_intersection_obs,latitude_of_DEM_intersection_obs,altitude_of_DEM_intersection_obs,geoid_separation_obs,mie_altitude_obs,rayleigh_altitude_obs,L1B_num_of_meas_per_obs,MCA_clim_BER,MCA_extinction,MCA_LOD,albedo_off_nadir</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>ica_fields</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>ICA_time_obs,ICA_QC_flag,ICA_filling_case,ICA_extinction,ICA_backscatter,ICA_LOD</wps:LiteralData>
+      </wps:Data>
+    </wps:Input>
+    <wps:Input>
+      <ows:Identifier>sca_fields</ows:Identifier>
+      <wps:Data>
+        <wps:LiteralData>SCA_time_obs,SCA_QC_flag,SCA_extinction_variance,SCA_backscatter_variance,SCA_LOD_variance,SCA_extinction,SCA_backscatter,SCA_LOD,SCA_SR</wps:LiteralData>
       </wps:Data>
     </wps:Input>
     <wps:Input>
       <ows:Identifier>filters</ows:Identifier>
       <wps:Data>
         <wps:ComplexData mimeType="application/json">
-          <![CDATA[{"SCA_backscatter":{"min":-4.827586,"max":5},"MCA_LOD":{"min":-0.146552,"max":0.210345}}]]>
+          <![CDATA[{"SCA_extinction_variance":{"min":-0.000018,"max":0.000005},"MCA_LOD":{"min":-0.336207,"max":0.27931}}]]>
         </wps:ComplexData>
       </wps:Data>
     </wps:Input>
